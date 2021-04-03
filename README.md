@@ -1,2 +1,2 @@
 # 450dsa
-Solutions synced with LeetHub - sidv.dev/gh/leethub
+DSA Solutions synced to GitHub using [LeetHub](sidv.dev/gh/leethub)
