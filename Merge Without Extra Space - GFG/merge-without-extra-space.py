@@ -5,6 +5,9 @@ class Solution:
         
         i = m - 1
         j = 0
+        # decrement i and increment j
+        # if current element in a1[i] is greater than current 
+        # element in a2[j] swap them
         while(i>=0 and j < n):
             if arr1[i] > arr2[j]:
                 arr1[i],arr2[j] = arr2[j],arr1[i]
