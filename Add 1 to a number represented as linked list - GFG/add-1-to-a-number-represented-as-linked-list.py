@@ -13,12 +13,11 @@ class Solution:
         n = []
         # i = 0
         temp = head
-        while(temp.next != None):
+        while(temp != None):
             # i+=1
             n.append(str(temp.data))
             temp = temp.next
         
-        n.append(str(temp.data))
         s = "".join(n)
         num = int(s)+1
         
