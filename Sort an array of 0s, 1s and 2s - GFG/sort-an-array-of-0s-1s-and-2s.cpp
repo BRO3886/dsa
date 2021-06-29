@@ -8,8 +8,24 @@ using namespace std;
 class Solution
 {
     public:
-    void sort012(int arr[], int n)
-    {
+    void sort012(int arr[], int n){
+        /**
+         * intuition:
+         * the array is divided into 3 parts, low med, high
+         * 
+         * whenever we see a 0, we move the mid and low 
+         * pointers ahead we also swap the current 
+         * element (mid) with arr[low]
+         * 
+         * whenever we see 1, we ignore and just move mid ahead
+         * 
+         * whenever we see 2, we swap arr[mid] and arr[high] 
+         * and decrement high
+         * 
+         * In this way, we keep adjusting the low, mid and high 
+         * such that mid keeps the count of 1s, low for 0s and 
+         * high for 2s.
+        */
         int mid = 0, low = 0, high = n-1;
         while(mid <= high){
             if(arr[mid] == 0){
