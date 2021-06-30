@@ -1,5 +1,5 @@
 # Union of two arrays
-## Basic 
+##  Basic 
 <div class="problem-statement">
                 <p></p><p><span style="font-size:18px">Given two arrays <strong>a[]</strong>&nbsp;and <strong>b[]</strong>&nbsp;of size <strong>n</strong>&nbsp;and <strong>n</strong>&nbsp;respectively. The task is to find union between these two arrays. </span></p>
 
