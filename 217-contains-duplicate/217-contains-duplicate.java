@@ -1,16 +1,22 @@
+import java.util.Random;
+
 class Solution {
-    public boolean containsDuplicateS(int[] nums) {
+    public boolean containsDuplicate(int[] nums) {
         /*
         approaches:
         1. make a dict
         2. make set, compare length of array and set    
         */
-        return false;
+        Random r = new Random();
+        
+        if(r.nextBoolean()) return approach1(nums);
+        
+        return approach2(nums);
     
     }
     
-    public boolean containsDuplicate(int[] nums) {
-        // approach 1
+    private boolean approach1(int[] nums) {
+        // approach 1 - map
         Map<Integer, Integer> map = new HashMap<>();
         
         for(int n: nums) {
@@ -24,8 +30,8 @@ class Solution {
         return false;
     }
     
-    private boolean containsDuplicateSet(int[] nums) {
-        // approach 2
+    private boolean approach2(int[] nums) {
+        // approach 2 - set
         Set<Integer> hs = new HashSet<>();
         for(int n: nums) {
             hs.add(Integer.parseInt(""+n));
