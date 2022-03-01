@@ -1,5 +1,5 @@
 O(nlogn) soln:
-​
+
 ```java
 class Solution {
 public int[] countBits(int n) {
@@ -9,7 +9,7 @@ arr[i] = findOnes(i);
 }
 return arr;
 }
-​
+
 private int findOnes(int n) {
 int count = 0;
 while(n != 0) {
@@ -20,10 +20,11 @@ return count;
 }
 }
 ```
-​
+
 `findOnes` takes `log(n)` time and for loop takes `n`. Total `nlog(n)`
-​
+
 ---
+
 **Other Approach: DP**
 ```
 0 = 0000 | DP[0] = 0
